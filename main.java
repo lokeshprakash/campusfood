@@ -54,7 +54,17 @@ public class main {
                 System.out.println("Price: Rs. " + selectedFood.itemprice);
 
                 System.out.print("Enter quantity: ");
-                int p = in.nextInt();
+                int p;
+                    while (true){
+                        try{
+                            p=in.nextInt();
+                            break;
+                        }
+                        catch(InputMismatchException e){
+                            System.out.println("Invalid input. Please enter a number.");
+                            in.next(); // Clear the invalid input                    
+                        }
+                    }
                 if (p > 0) {
     int total = selectedFood.itemprice * p;
 
@@ -85,7 +95,16 @@ public class main {
             food3.display();
 
             System.out.print("Enter your food choice: ");
-            int foodChoice = in.nextInt();
+            int foodChoice;
+            while(true){
+                try {
+                    foodChoice = in.nextInt();
+                    break; // Exit the loop if input is valid
+                } catch (InputMismatchException e) {
+                    System.out.println("Invalid input. Please enter a number.");
+                    in.next(); // Clear the invalid input
+                }
+            }
 
             fooditem selectedFood = null;
 
@@ -104,7 +123,16 @@ public class main {
                 System.out.println("Price: Rs. " + selectedFood.itemprice);
 
                 System.out.print("Enter quantity: ");
-                int p = in.nextInt();
+                int p;
+                while(true){
+                    try {
+                        p = in.nextInt();
+                        break; // Exit the loop if input is valid
+                    } catch (InputMismatchException e) {
+                        System.out.println("Invalid input. Please enter a number.");
+                        in.next(); // Clear the invalid input
+                    }
+                }
                 if (p > 0) {
     int total = selectedFood.itemprice * p;
 
@@ -168,8 +196,17 @@ public class main {
                 System.out.println("Price: Rs. " + selectedFood.itemprice);
 
                 System.out.print("Enter quantity: ");
-                int p = in.nextInt();           
-if (p > 0) {
+                int p;
+                while(true){
+                    try {
+                        p = in.nextInt();
+                        break; // Exit the loop if input is valid
+                    } catch (InputMismatchException e) {
+                        System.out.println("Invalid input. Please enter a number.");
+                        in.next(); // Clear the invalid input
+                    }
+                }
+                if (p > 0) {
     int total = selectedFood.itemprice * p;
 
     reference b = new reference();
