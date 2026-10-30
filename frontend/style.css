@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f0ff;
+    color: #302044;
+}
+
+/* Header */
+
+header {
+    background: #5b2c83;
+    color: white;
+    padding: 25px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.logo-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+.logo-container h1 {
+    font-size: 38px;
+    letter-spacing: 2px;
+}
+
+.logo-container p {
+    margin-top: 8px;
+    color: #eadbff;
+}
+
+/* Sections */
+
+section {
+    background: white;
+    margin: 25px auto;
+    padding: 25px;
+    width: 85%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(91, 44, 131, 0.12);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #5b2c83;
+}
+
+/* Student Details */
+
+input {
+    padding: 13px;
+    margin: 8px;
+    width: 40%;
+    border: 1px solid #c9a9e8;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid #8e44ad;
+}
+
+/* Buttons */
+
+button {
+    background: #7d3c98;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #51236f;
+    transform: translateY(-2px);
+}
+
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Food Cards */
+
+#menuItems {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.food-card {
+    background: #f5edff;
+    padding: 22px;
+    margin: 5px;
+    width: 200px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e3d0f5;
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    box-shadow: 0 5px 15px rgba(91, 44, 131, 0.2);
+    transform: translateY(-4px);
+}
+
+.food-card h3 {
+    color: #5b2c83;
+    margin-bottom: 12px;
+}
+
+.food-card p {
+    margin-bottom: 10px;
+}
+
+/* Cart */
+
+.cart-item {
+    padding: 15px;
+    border-bottom: 1px solid #e3d0f5;
+}
+
+#total {
+    color: #7d3c98;
+    margin-top: 20px;
+}
+
+.checkout-btn {
+    background: #5b2c83;
+    font-size: 16px;
+}
+
+/* Confirmation */
+
+#confirmation {
+    text-align: center;
+    color: #5b2c83;
+    font-size: 17px;
+    line-height: 2;
+    background: #f0e5ff;
+}
+
+/* Footer */
+
+footer {
+    background: #5b2c83;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Mobile Screen */
+
+@media (max-width: 600px) {
+
+    section {
+        width: 95%;
+    }
+
+    .logo-container img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .logo-container h1 {
+        font-size: 25px;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    .food-card {
+        width: 100%;
+    }
+
+    .shop-container {
+        flex-direction: column;
+    }
+
+}

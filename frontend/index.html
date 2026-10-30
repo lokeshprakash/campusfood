@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPUS BITES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="campus-bites-logo.png" alt="Campus Bites Mascot">
+
+            <div>
+                <h1>ADHI FOODZ</h1>
+                <p>Your Campus Food Ordering System</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="student">
+        <h2>Student Details</h2>
+
+        <input type="text" id="studentName" placeholder="Enter your name">
+
+        <input type="text" id="registerNo" placeholder="Enter register number">
+    </section>
+
+    <section class="shops">
+
+        <h2>Select Your Shop</h2>
+
+        <div class="shop-container">
+
+            <button onclick="showMenu('REC_MART')">
+                REC MART
+            </button>
+
+            <button onclick="showMenu('REC_CAFE')">
+                REC CAFE
+            </button>
+
+            <button onclick="showMenu('REC_HUTCAFE')">
+                REC HUTCAFE
+            </button>
+
+        </div>
+
+    </section>
+
+    <section id="menuSection">
+
+        <h2 id="shopName">Food Menu</h2>
+
+        <div id="menuItems"></div>
+
+    </section>
+
+    <section class="cart">
+
+        <h2>Your Shopping Cart</h2>
+
+        <div id="cartItems"></div>
+
+        <h3 id="total">Total: ₹0</h3>
+
+        <button onclick="checkout()" class="checkout-btn">
+            Place Order
+        </button>
+
+    </section>
+
+    <section id="confirmation"></section>
+
+    <footer>
+        <p>© 2026 CAMPUS BITES | Made for REC Students</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
